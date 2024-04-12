@@ -157,7 +157,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a6d8e4c5590f5040aac7c12ba943f63, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliveTime: 20
+  aliveTime: 17
   textObject: {fileID: 687099322560422078}
   pointsToGive: 10
 --- !u!1 &687099322560422078

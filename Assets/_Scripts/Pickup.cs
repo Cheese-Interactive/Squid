@@ -2,8 +2,8 @@ using System.Collections;
 using TMPro;
 using UnityEngine;
 
-public abstract class Pickup : MonoBehaviour {
-    [SerializeField] private int aliveTime;
+public abstract class Pickup : Spawnable {
+
     [SerializeField] private GameObject textObject;
     private TextMeshPro cdText;
     protected PlayerController player;

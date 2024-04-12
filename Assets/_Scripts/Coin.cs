@@ -4,7 +4,7 @@ public class Coin : Pickup {
     public override void interact() {
         player.givePoints(pointsToGive);
         FindObjectOfType<GameManager>().spawnMats();
-        FindObjectOfType<GameManager>().spawnPts(1);
+        FindObjectOfType<GameManager>().spawnPts(2);
         Destroy(gameObject);
     }
 }
