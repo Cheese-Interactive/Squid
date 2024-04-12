@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour {
         if (Input.GetMouseButtonDown(1)) {
             Quaternion rot = placer.transform.rotation;
             placer.transform.rotation = Quaternion.Euler(rot.eulerAngles.x, rot.eulerAngles.y, rot.eulerAngles.z + 90);
-            print(rot.eulerAngles);
         }
         if (mats == 0)
             canBuild = false;
@@ -58,8 +57,11 @@ public class PlayerController : MonoBehaviour {
     }
     private void OnTriggerEnter2D(Collider2D c) {
         GameObject colObj = c.gameObject;
-        if (colObj.GetComponent<Pickup>() != null)
+        if (colObj.GetComponent<Pickup>() != null) {
+            if (colObj.GetComponent<Materials>() != null && mats == 0)
+                placerSprite.enabled = true;
             colObj.GetComponent<Pickup>().interact();
+        }
     }
 
 
@@ -93,6 +95,7 @@ public class PlayerController : MonoBehaviour {
     }
     public void givePoints(int p) {
         score += p;
+        print(score);
     }
 }
 

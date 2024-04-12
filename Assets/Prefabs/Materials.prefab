@@ -104,9 +104,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a6d60288c2b1934d969b2eabe5874a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aliveTime: 5
+  aliveTime: 6
   textObject: {fileID: 687099322560422078}
-  matsToGive: 2
+  matsToGive: 4
 --- !u!222 &4166024778115958456
 CanvasRenderer:
   m_ObjectHideFlags: 0

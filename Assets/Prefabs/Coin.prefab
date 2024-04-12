@@ -10,11 +10,11 @@ GameObject:
   m_Component:
   - component: {fileID: 3143434016524497084}
   - component: {fileID: 6998018096328897407}
-  - component: {fileID: 9078462540603778311}
   - component: {fileID: 4166024778115958456}
   - component: {fileID: 366700887695842811}
+  - component: {fileID: -7981469150124682729}
   m_Layer: 0
-  m_Name: Materials 1
+  m_Name: Coin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92,21 +92,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9078462540603778311
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 33495656840803457}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a6d60288c2b1934d969b2eabe5874a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  aliveTime: 5
-  textObject: {fileID: 687099322560422078}
-  matsToGive: 2
 --- !u!222 &4166024778115958456
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -160,6 +145,21 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8828125, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &-7981469150124682729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33495656840803457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6d8e4c5590f5040aac7c12ba943f63, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aliveTime: 20
+  textObject: {fileID: 687099322560422078}
+  pointsToGive: 10
 --- !u!1 &687099322560422078
 GameObject:
   m_ObjectHideFlags: 0
