@@ -91,5 +91,8 @@ public class PlayerController : MonoBehaviour {
     public void giveMats(int m) {
         mats += m;
     }
+    public void givePoints(int p) {
+        score += p;
+    }
 }
 
